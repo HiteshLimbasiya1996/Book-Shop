@@ -1,5 +1,5 @@
 import React from 'react'
-import Home from './pages/Home'
+import Home from './Pages/Home'
 import About from './Pages/About'
 import Blog from './Pages/Blog'
 import Checkout from './Pages/Checkout'
@@ -26,7 +26,10 @@ function App() {
         <Route path='/login' element={<Login/>}/>
       </Routes>
       </BrowserRouter>
+     
     </div>
+
+   
   )
 }
 

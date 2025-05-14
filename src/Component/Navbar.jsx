@@ -5,18 +5,18 @@ import { NavLink } from 'react-router-dom'
 function Navbar() {
   return (
     <div>
-      <nav className="navbar bg-[#FF971D] fixed-top px-[80px]">
+      <nav className="navbar bg-[#FF971D] lg:px-[80px]">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src={logo} alt="" className='h-[50px]' /></a>
-          <ul className=' gap-[45px] text-white text-[16px] hidden md:hidden sm:flex'>
-          <NavLink to='/'> <li>Home</li></NavLink>
+          <ul className=' gap-[45px] text-white text-[16px] hidden lg:flex md:hidden sm:flex'>
+            <NavLink to='/'> <li>Home</li></NavLink>
             <NavLink to='/about'><li>About Us</li></NavLink>
             <NavLink to='/shop'><li>Shop</li></NavLink>
             <NavLink to='/blog'><li>Blog</li></NavLink>
             <NavLink to='/contact'><li>Contact Us</li></NavLink>
           </ul>
-          <div className='hidden sm:flex md:hidden'>
-            <button className='border-1 rounded-[30px] text-white px-[58px] text-[25px] py-[14px] border-[white]'>Login</button>
+          <div className='hidden sm:flex md:hidden lg:flex'>
+            <button className='border-1 rounded-[30px] text-white px-[30px] text-[20px] py-[8px] border-[white]'>Login</button>
           </div>
           <div className='humberger lg:hidden'>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

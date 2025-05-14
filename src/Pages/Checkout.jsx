@@ -1,13 +1,27 @@
 import React from 'react'
-import Navbar from '../Component/Navbar'
+// import Navbar from '../Component/Navbar'
 import Footer from '../Component/Footer'
+import PlainBg from '../Component/PlainBg'
+import Checkoutitem from '../Component/Checkoutitem'
+import CheckProducts from '../Component/CheckProducts'
 
 function Checkout() {
   return (
     <div>
-      <Navbar/>
-        <h1>This is a Checkout page</h1> 
-      <Footer/>
+      <PlainBg />
+      <div className='bg-[#F5F6F8] w-full gap-4 flex'>
+        
+         <div className='w-[57%]'>
+          <Checkoutitem />
+        </div>
+        <div className='w-[35%]'>
+           <CheckProducts />
+        </div>
+       
+      </div>
+
+      
+      <Footer />
     </div>
   )
 }

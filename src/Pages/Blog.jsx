@@ -1,12 +1,15 @@
 import React from 'react'
 import Navbar from '../Component/Navbar'
 import Footer from '../Component/Footer'
+import Post from '../Component/Post'
+import MainSlider from '../Component/MainSlider'
 
 function Blog() {
   return (
     <div>
     <Navbar/>
-    <h1>This is a Blog page</h1> 
+    <MainSlider/>
+    <Post/>
     <Footer/>
     </div>
   )

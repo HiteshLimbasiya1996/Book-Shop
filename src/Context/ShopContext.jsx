@@ -1,11 +1,17 @@
-import React from 'react'
+import React, {createContext, useEffect, useState } from 'react'
+import { bookdata } from '../assets/data';
 
-function ShopContext() {
-  return (
-    <div>
-      
-    </div>
+export const ProductContext = createContext();
+
+export const ProductProvider = ({children}) =>{
+  const[products, setProducts] =useState([]);
+
+  useEffect(()=>{
+    setProducts(bookdata);
+  },[])
+  return(
+    <ProductContext.Provider value={{products}}>
+      {children}
+    </ProductContext.Provider>
   )
-}
-
-export default ShopContext
+};
